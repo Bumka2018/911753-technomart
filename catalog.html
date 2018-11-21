@@ -6,6 +6,7 @@
   </head>
   <body>
     <header class="main-header">
+<!-- Согласно макету хедер каталога отличается от хедера в индексе. Эти отличия необходимо учесть. Также необходимо учесть замечания с индекса для хедера -->
       <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
       <ul class="user-navigation">
@@ -40,12 +41,14 @@
       </nav>
     </header>
     <main class="container">
+<!-- Хлебные крошки есть смысл вынести из семантического тега main. В main должна находиться основная информация, по которой поисковые роботы в первую очередь осуществляют поиск, а вот хлебные крошки такой не являются -->
     <ul class="breadcrumbs">
         <li><a href="catalog.html">Каталог</a></li>
         <li><a href="breadcrumbs-tool.html">Инструмент</a></li>
         <li class="breadcrumbs-perforators">Перфораторы</li>
       </ul>
       <h1 class="page-title">Перфораторы</h1>
+<!-- В хедере уже есть заголовок 1-го уровня. Заголовок 1-го уровня на странице должен быть только один. Это с точки зрения СЕО-оптимизации -->
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <!-- Здесь будет форма -->
@@ -55,17 +58,23 @@
         <ul class="catalog-list">
           <li class="catalog-item">
               <a href="catalog-item.html">
+<!-- Это не должно быть ссылкой -->
                 <span class="catalog-category">Перфоратор BOSCH</span>
                 <span class="catalog-item-title">BFG 3000</span>
+<!-- Нет смысла название разделять на два тега. Кроме того, спан - не самый подходящий тег для названия. Заголовок будет лучше -->
               </a>
             <p class="catalog-item-image">
               <a href="catalog-item.html">
+<!-- Это не должно быть ссылкой -->
                 <img src="img/product-1.jpg" width="200" height="200" alt="Перфоратор BOSCH BFG 3000">
               </a>
             </p>
+<!-- Отсутствует "старая" цена (перечеркнутая) -->
             <p class="catalog-item-price">
+<!-- Это не должно быть ссылкой -->
               <a class="button" href="#">15 500 ₽</a>
             </p>
+<!-- Отсутствует всплывающий блок с кнопками Купить и В закладки -->
           </li>
           <li class="catalog-item">
               <a href="catalog-item.html">
@@ -183,6 +192,7 @@
               </section>
              </main>
             <footer class="main-footer">
+<!-- По футеру замечания в индексе -->
               <p class="footer-contacts">
                 Техномарт<br>
                 г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
