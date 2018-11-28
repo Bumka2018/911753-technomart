@@ -8,8 +8,17 @@
     <header class="main-header">
       <div>
         <h1>ТЕХНОМАРТ</h1>
+<!-- Вот так:
+<h1>
+  <a href="index.html">ТЕХНОМАРТ</a>
+</h1> -->
+
           <img src="img/icon-search.png" width="100" height="50" alt="Поиск по сайту">
+<!-- Иконку лупы будем ставить на фон псевдоэлемента. Это делается силами css. На данном этапе просто удали тег img из разметки -->
+
           <input form="search" placeholder="Поиск">
+<!-- про поиск писал в скайпе -->
+
           <a href="favorites">Закладки</a>
           <a href="cart">Корзина</a>
           <a href="button-order">Оформить заказ</a>
