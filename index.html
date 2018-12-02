@@ -7,18 +7,12 @@
   <body>
     <header class="main-header">
       <div>
-        <h1>ТЕХНОМАРТ</h1>
-<!-- Вот так:
-<h1>
-  <a href="index.html">ТЕХНОМАРТ</a>
-</h1> -->
-
-          <img src="img/icon-search.png" width="100" height="50" alt="Поиск по сайту">
-<!-- Иконку лупы будем ставить на фон псевдоэлемента. Это делается силами css. На данном этапе просто удали тег img из разметки -->
-
-          <input form="search" placeholder="Поиск">
-<!-- про поиск писал в скайпе -->
-
+        <h1>
+          <a>ТЕХНОМАРТ</a>
+        </h1>
+        <form class="" action="" method="">
+        	   <input type="search" placeholder="Поиск:">
+        </form>
           <a href="favorites">Закладки</a>
           <a href="cart">Корзина</a>
           <a href="button-order">Оформить заказ</a>
@@ -56,8 +50,16 @@
         <section class="contacts">
         <h5>Контакты</h5>
           <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-          <a href="#"><img src="#"/></a>
+          <section class="modal modal-map">
+   <h2 class="visually-hidden">Как до нас добраться</h2>
+<p>
+<img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу Большая Конюшенная ул., 19, Санкт-Петербург">
+</p>
+<button class="modal-close" type="button">Закрыть</button>
+</section>
         <button class="contacts">Заблудились? Напишите нам!</button>
+<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+</form>
       </section>
      </main>
      <footer class="main-footer">

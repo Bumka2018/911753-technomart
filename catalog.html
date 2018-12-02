@@ -7,17 +7,12 @@
   <body>
     <header class="main-header">
     <div>
-      <h1>ТЕХНОМАРТ</h1>
-<!-- Ссылка куда делась? была же... Вот так нужно:
-<h1>
-  <a href="index.html">ТЕХНОМАРТ</a>
-</h1>
-На главной странице точно также, но ссылку без аттрибута href  -->
-
-
-        <input form="search" placeholder="Поиск">
-<!-- Про поиск написал в скайпе -->
-
+      <h1>
+        <a href="index.html">ТЕХНОМАРТ</a>
+      </h1>
+      <form class="" action="" method="">
+           <input type="search" placeholder="Поиск:">
+      </form>
         <a href="favorites">Закладки</a>
         <a href="cart">Корзина</a>
         <a href="button-order">Оформить заказ</a>
@@ -40,70 +35,65 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
       </nav>
-<!-- Не понимаю куда хлебные крошки... (( -->
-<!-- пусть останутся здесь -->
              <ul class="breadcrumbs">
                <li><a href="catalog.html">Каталог</a></li>
                <li><a href="breadcrumbs-tool.html">Инструмент</a></li>
                <li class="breadcrumbs-perforators">Перфораторы</li>
-        </ul>
+           </ul>
     </header>
     <main class="container">
       <h3 class="page-title">Перфораторы</h3>
-      <section class="filters">
-        <h4 class="visually-hidden">Фильтр товаров</h4>
-        <!-- Здесь будет форма -->
-        <form class="filter">
-<!-- Форма в работе -->
-<!-- ты на правильном пути! -->
-          <fieldset>
-            <legend>Производители:</legend>
-            <ul>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
-                <label for="filter-bosch">Bosch</label>
-              </li>
-            <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-bosch" checked>
-                <label for="filter-bosch">Интерскол</label>
-            </li>
-            <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-makita" checked>
-                <label for="filter-bosch">Makita</label>
-            </li>
-            <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-dewalt" checked>
-                <label for="filter-bosch">Dewalt</label>
-            </li>
-            <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-hitachi" checked>
-                <label for="filter-bosch">Hitachi</label>
-            </li>
-          </ul>
-        </fieldset>
-        <fieldset>
-            <legend>Группы товаров:</legend>
-            <ul>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="accumulator" id="filter-accumulator">
-                <label for="filter-accumulator">Аккумуляторные</label>
-              </li>
-              <li class="filter-option">
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="networked" id="filter-networked" checked>
-                <label for="filter-networked">Сетевые</label>
-              </li>
-            </ul>
-          </fieldset>
-          <button type="submit" class="filter-button button">Показать</button>
-        </form>
-      </section>
+        <section class="filters">
+          <h2 class="visually-hidden">Фильтр товаров</h2>
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset>
+              <legend>Производители:</legend>
+              <ul>
+                <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
+                  <label for="bosch">BOSCH</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol">
+                    <label for="interskol">ИНТЕРСКОЛ</label>
+                    </li>
+                    <li class="filter-option">
+                      <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
+                      <label for="makita">MAKITA</label>
+                      </li>
+                      <li class="filter-option">
+                        <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
+                        <label for="dewalt">DEWALT</label>
+                        </li>
+                        <li class="filter-option">
+                          <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
+                          <label for="hitachi">HITACHI</label>
+                          </li>
+                          </ul>
+                          </fieldset>
+                          <fieldset>
+                            <legend>Питание:</legend>
+                            <ul>
+                              <li class="filter-option">
+                                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power-supply" value="rechargeable" id="filter-rechargeable" checked>
+                                <label for="filter-rechargeable">Аккумуляторные</label>
+                                </li>
+                                <li class="filter-option">
+                                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power-supply" value="networked" id="filter-networked">
+                                  <label for="filter-networked">Сетевые</label>
+                                  </li>
+                                  </ul>
+                                  </fieldset>
+                                  <button type="submit" class="filter-button button">Показать</button>
+                                  </form>
+                                  </section>
       <section class="catalog">
         <h4 class="visually-hidden">Список перфораторов</h4>
         <ul class="catalog-list">
           <li class="catalog-item">
         <h5 class="catalog-category">Перфоратор BOSCH BFG 3000</h5>
             <p class="catalog-item-image">
-                <img src="img/product-1.jpg" width="200" height="200" alt="Перфоратор BOSCH BFG 3000">
+                <img src="img/product-1.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
             </p>
         <p><s>22 500 ₽</s></p>
         <a class="button" href="#">15 500 ₽</a>
@@ -113,7 +103,7 @@
           <li class="catalog-item">
          <h5 class="catalog-category">Перфоратор BOSCH BFG 6000</h5>
              <p class="catalog-item-image">
-                 <img src="img/product-2.jpg" width="200" height="200" alt="Перфоратор BOSCH BFG 6000">
+                 <img src="img/product-2.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 6000">
              </p>
          <p><s>30 500 ₽</s></p>
          <a class="button" href="#">25 500 ₽</a>
@@ -123,7 +113,7 @@
             <li class="catalog-item">
              <h5 class="catalog-category">Перфоратор BOSCH BFG 2000</h5>
               <p class="catalog-item-image">
-              <img src="img/product-3.jpg" width="200" height="200" alt="Перфоратор BOSCH BFG 2000">
+              <img src="img/product-3.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
               </p>
           <a class="button" href="#">12 500 ₽</a>
           <a class="button" href="#">Купить</a>
@@ -132,7 +122,7 @@
              <li class="catalog-item">
            <h5 class="catalog-category">Перфоратор BOSCH BFG 3000</h5>
                <p class="catalog-item-image">
-                   <img src="img/product-4.jpg" width="200" height="200" alt="Перфоратор BOSCH BFG 3000">
+                   <img src="img/product-4.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 3000">
                </p>
            <p><s>22 500 ₽</s></p>
            <a class="button" href="#">15 500 ₽</a>
@@ -142,7 +132,7 @@
              <li class="catalog-item">
             <h4 class="catalog-category">Перфоратор BOSCH BFG 6000</h4>
                 <p class="catalog-item-image">
-                    <img src="img/product-5.jpg" width="200" height="200" alt="Перфоратор BOSCH BFG 6000">
+                    <img src="img/product-5.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 6000">
                 </p>
             <p><s>30 500 ₽</s></p>
             <a class="button" href="#">25 500 ₽</a>
@@ -152,7 +142,7 @@
                <li class="catalog-item">
                 <h5 class="catalog-category">Перфоратор BOSCH BFG 2000</h5>
                  <p class="catalog-item-image">
-                 <img src="img/product-6.jpg" width="200" height="200" alt="Перфоратор BOSCH BFG 2000">
+                 <img src="img/product-6.jpg" width="127" height="112" alt="Перфоратор BOSCH BFG 2000">
                  </p>
              <a class="button" href="#">12 500 ₽</a>
              <a class="button" href="#">Купить</a>
