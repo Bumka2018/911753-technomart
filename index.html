@@ -17,24 +17,46 @@
           <a href="cart">Корзина</a>
           <a href="button-order">Оформить заказ</a>
         </div>
-       <div>
-       <h2> Интернет-магазин строительных материалов и инструментов для ремонта</h2>
+    <div>
+ <h2> Интернет-магазин строительных материалов и инструментов для ремонта</h2>
         <a href="tel:+78125550555">+7 (812) 555-05-55</a>
         <p>г. Санкт-Петербург, Б. Конюшенная, д. 19/8</p>
+        <section class="modal modal-login">
+          <h2 class="visually-hidden">Личный кабинет</h2>
           <button class="login-link">Войти</button>
+          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label class="visually-hidden" for="user-login">Логин</label>
+              <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+            </p>
+            <p>
+              <label class="visually-hidden" for="user-password">Пароль</label>
+              <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+            </p>
+            <p class="login-password-info">
+              <label class="login-checkbox">
+              <input type="checkbox" name="remember">Запомнить
+              </label>
+              <a class="restore" href="#">Забыли пароль?</a>
+            </p>
+            <button class="button" type="submit">Войти
+            </button>
+          </form>
+          <button class="modal-close" type="button">Закрыть
+          </button>
           <button class="Sign-in">Регистрация</button>
-       </div>
+    </div>
         <nav>
           <ul class="site-navigation">
-           <li><a class="home-page.html">Главная</a></li>
-           <li><a href="company.html">Компания</a></li>
-           <li><a href="catalog.html">Каталог</a></li>
-           <li><a href="news.html">Новости</a></li>
-           <li><a href="special-offer.html">Спецпредложения</a></li>
-           <li><a href="delivery.html">Доставка</a></li>
-           <li><a href="contacts.html">Контакты</a></li>
-         </ul>
-       </nav>
+          <li><a class="home-page.html">Главная</a></li>
+          <li><a href="company.html">Компания</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="news.html">Новости</a></li>
+          <li><a href="special-offer.html">Спецпредложения</a></li>
+          <li><a href="delivery.html">Доставка</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
     </header>
     <main class="container">
         <h5>Компания "Техномарт"</h5>
@@ -53,12 +75,25 @@
           <section class="modal modal-map">
    <h2 class="visually-hidden">Как до нас добраться</h2>
 <p>
-<img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу Большая Конюшенная ул., 19, Санкт-Петербург">
+<img src="img/map.jpg" width="300" height="158" alt="Офис компании по адресу Большая Конюшенная ул., 19, Санкт-Петербург">
 </p>
 <button class="modal-close" type="button">Закрыть</button>
 </section>
         <button class="contacts">Заблудились? Напишите нам!</button>
-<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+<form class="letter-form" action="https://echo.htmlacademy.ru" method="post">
+  <p class="letter-item">
+    <label for="letter-name">Ваше имя:</label>
+  <input id="letter-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+  </p>
+  <p class="letter-item">
+    <label for="letter-post">Ваш e-mail:</label>
+  <input id="letter-post" type="text" name="post" value="" placeholder="email@example.com">
+  </p>
+  <p class="letter-item">
+    <label for="letter-letter">Текст письма:</label>
+  <input id="letter-letter" type="text" name="letter" value="" placeholder="В свободной форме">
+  </p>
+  <button class="button" type="submit">Отправить</button>
 </form>
       </section>
      </main>
